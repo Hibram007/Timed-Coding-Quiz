@@ -15,33 +15,48 @@
      <a href="quizscores.html"> See Quiz Score</a>
  </div>
 
+ <!-- Timer section/ info
+   / Will be used in tandem with JS Timer Functions-->
 
+ <div class="timer">
+     Time Left: 
+     <span id="time">60</span>
+ </div>
 
+ <!--functions a container to WRAP everything
+  /   Useful for CSS-->
+ <div class="game container">
 
 <!--Set up start page with Start button-->
-
-
-
-
-
-
+<div class="start" id="startscreen">
+    <h1> JS Coding Quiz!</h1>
+    <p>
+        The following is a timed quiz, you will have 60 secs. Incorrect answers subtract time, choose wisely Earthling! &#128516;</p> 
+    </p>
+ <button id="start-btn"> Start Quiz</button>
+</div>
 
 <!--Quiz Question Layout-->
+ <div class="hide" id="questions">
 
+<!--Questions will be added from JS here-->
+ </div>
 
-<!--Layout for the end of the quiz-->
+ <!--End screen layout-->
+ <div class="hide" id="end-screen">
+     <h2> Your time or questions are up!</h2>
+     <p> Your quiz score is <span id="final-score"></span>.</p>
+     <p>
+        Record your initials: <input type="text" id="initials" max="4" />
+        <button id="Submit">Submit name </button>
+     </p>
+</div>
+ </div>
 
-
-
-
-
-
-
-
-<!-- Inside this JavaScript file I've inserted Questions and Options only -->
+<!-- Contains all JS code for questions only -->
 <script src="questions.js"></script>
 
-<!-- Inside this JavaScript file I've coded all Quiz Codes -->
+<!-- Contains all JS code for quiz-->
 <script src="script.js"></script>
 
 </body>
