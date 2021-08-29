@@ -1,4 +1,4 @@
-# Timed COding Quiz
+# Timed Coding Quiz
 
 ## Module 4 : Web API's Challenge
 
@@ -16,6 +16,7 @@ Html, Css, and Javascript, Html web API (DOM)
 5) Bootstap, jQuery, jQuery UI Libraries
 
 ### Screen Shot
-![ScreenShot of Quiz](/path/to/image.jpg)
+![ScreenShot of Quiz](Coding Quiz Screenshot.png)
+
 ### Link to deployed app:
 https://hibram007.github.io/Timed-Coding-Quiz/ 
