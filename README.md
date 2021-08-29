@@ -16,7 +16,7 @@ Html, Css, and Javascript, Html web API (DOM)
 5) Bootstap, jQuery, jQuery UI Libraries
 
 ### Screen Shot
-![ScreenShot of Quiz](Coding Quiz Screenshot.png)
+![Coding Quiz Screenshot](https://user-images.githubusercontent.com/87105978/131260218-cec9553b-58c3-4883-9c7b-0255c1a6c950.png)
 
 ### Link to deployed app:
 https://hibram007.github.io/Timed-Coding-Quiz/ 
