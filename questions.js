@@ -1,6 +1,4 @@
-// rename to script.js
-
-//create and store questions
+//create and store questions --- Array will be the "container" of the info
 var questions = [
   {
      title: "What does HTML stand for?",
@@ -37,21 +35,22 @@ var questions = [
 var timer;
 var time = 60;
 function startQuiz() {
-  //hide the start elements
+
+  //hide the start elements --- NB. this is the selective display ability
   document.querySelector("#start-screen").classList.add("hide")
 
-  //show the questions contianer
+  //tells comp to show quiz questions after hiding the start screen
   document.querySelector("#questions").classList.remove("hide")
 
-  //start the timer
+  //timer function - how the clock will run
   timer = setInterval(function() {
-      //decrease time
+      //lessen time
       time--;
 
-      //show the decreased time
+      //will display the countdown
       document.querySelector("#time").textContent = time;
 
-      //end quiz if time runs out
+      //conditional to end quiz if time runs out
       if (time <= 0) {
           endQuiz();
       }
@@ -65,7 +64,8 @@ document.querySelector("#start").addEventListener("click", startQuiz);
 
 var questionIndex = 0;
 function showQuestions() {
-  //create question markup
+
+  //dynamically creating html section for questions ---- find section and style in css 
   var questionHTML = `
       <div class="question">
           <h2 class="question-title">${questions[questionIndex].title}</h2>
@@ -93,6 +93,7 @@ function handleAnswerClick(e) {
   //check if answer is correct
   if (e.target.textContent === questions[questionIndex].answer) {
       score++;
+      // how time will be subtracted  when wrong answer is chosen
   } else {
       time -= 10;
   }
@@ -111,12 +112,12 @@ function endQuiz() {
   //stop the timer
   clearInterval(timer);
 
-  //hide the question CredentialsContainer
+
   document.querySelector("#questions").classList.add("hide");
 
-  //display the final score
+  //displays the final quiz score
   document.querySelector("#final-score").textContent = score;
 
-  //show the end screen
+  //shows the end screen
   document.querySelector("#end-screen").classList.remove("hide");
 }
